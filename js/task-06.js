@@ -11,5 +11,6 @@ function checkInput(event) {
 
     } else {
         inputRef.classList.add('invalid');
+        inputRef.classList.remove('valid');
     }
 }

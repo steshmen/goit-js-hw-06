@@ -7,10 +7,9 @@ function submitForm(event) {
     event.preventDefault();
 
     if (email.value && password.value) {
-        console.log({email: email.value, password: password.value});
+        console.log({ email: email.value, password: password.value });
+        event.currentTarget.reset();
     } else {
         alert('All fields of the form must be completed');
     }
-    
-    event.currentTarget.reset();
 }
